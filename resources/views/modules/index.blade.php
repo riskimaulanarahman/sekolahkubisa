@@ -254,6 +254,7 @@
 
         $.getJSON('shownilai/'+moduleid,function(item){
             console.log(item)
+            $('#listnilai').html('')
             $.each(item,function(x,y){
                 $('#listnilai').append('<tr><td>'+y.user.nama_lengkap+'</td><td>'+y.hasil+'</td></tr>')
             })
