@@ -5,7 +5,7 @@
 @section('content')
 	<!-- begin login-cover -->
 	<div class="login-cover">
-		<div class="login-cover-image" style="background-image: url(/assets/img/login-bg/login-bg-14.jpg)" data-id="login-cover-image"></div>
+		<div class="login-cover-image" style="background-image: url(/assets/img/login-bg/bgdayak.jpeg)" data-id="login-cover-image"></div>
 		<div class="login-cover-bg"></div>
 	</div>
 	<!-- end login-cover -->
@@ -46,7 +46,7 @@
                     @endif
 				</div>
 				<div class="login-buttons">
-					<button type="submit" class="btn btn-success btn-block btn-lg">Masuk</button>
+					<button type="submit" class="btn btn-warning btn-block btn-lg">Masuk</button>
 				</div>
 				<small>Created by Dewi Kintansari</small>
 
@@ -62,7 +62,7 @@
 		<li><a href="javascript:;" data-click="change-bg" data-img="/assets/img/login-bg/login-bg-17.jpg" style="background-image: url(/assets/img/login-bg/login-bg-17.jpg)"></a></li>
 		<li><a href="javascript:;" data-click="change-bg" data-img="/assets/img/login-bg/login-bg-16.jpg" style="background-image: url(/assets/img/login-bg/login-bg-16.jpg)"></a></li>
 		<li><a href="javascript:;" data-click="change-bg" data-img="/assets/img/login-bg/login-bg-15.jpg" style="background-image: url(/assets/img/login-bg/login-bg-15.jpg)"></a></li>
-		<li class="active"><a href="javascript:;" data-click="change-bg" data-img="/assets/img/login-bg/login-bg-14.jpg" style="background-image: url(/assets/img/login-bg/login-bg-14.jpg)"></a></li>
+		<li class="active"><a href="javascript:;" data-click="change-bg" data-img="/assets/img/login-bg/bgdayak.jpeg" style="background-image: url(/assets/img/login-bg/bgdayak.jpeg)"></a></li>
 		<li><a href="javascript:;" data-click="change-bg" data-img="/assets/img/logo/bglogin.jpg" style="background-image: url(/assets/img/logo/bglogin.jpg)"></a></li>
 		<li><a href="javascript:;" data-click="change-bg" data-img="/assets/img/login-bg/login-bg-12.jpg" style="background-image: url(/assets/img/login-bg/login-bg-12.jpg)"></a></li>
 	</ul>

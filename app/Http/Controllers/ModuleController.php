@@ -120,4 +120,11 @@ class ModuleController extends Controller
 
         return redirect()->route('modules.index')->with('success', 'Module deleted successfully.');
     }
+
+    public function countmodule()
+    {
+        $data = Module::count();
+
+        return $data;
+    }
 }

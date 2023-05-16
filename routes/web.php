@@ -45,6 +45,7 @@ Route::get('/', 'HomeController@index')->name('dashboard');
     Route::get('soalevaluasi/{id}', 'SoalController@soalevaluasi');
     Route::post('jawabsiswa', 'SoalController@jawabsiswa');
     Route::get('checknilai/{id}', 'SoalController@checknilai');
+    Route::get('countmodule', 'ModuleController@countmodule');
     Route::get('shownilai/{id}', 'SoalController@shownilai');
     // //import excel
     // Route::get('/siswa', 'SiswaController@index');

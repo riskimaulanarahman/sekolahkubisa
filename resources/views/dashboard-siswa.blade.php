@@ -4,7 +4,9 @@
 
 @section('content')
 	<!-- begin row -->
-	<h1>Welcome, {{Auth::user()->username}}</h1>
+	<div class="widget widget-stats bg-orange">
+		<h1>Welcome, {{Auth::user()->username}}</h1>
+	</div>
 	<hr>
 	<div class="row">
 		<!-- begin col-3 -->
@@ -13,7 +15,7 @@
 				<div class="stats-icon stats-icon-lg"><i class="fa fa-book"></i></div>
 				<div class="stats-content">
 					<div class="stats-number">Module</div>
-					<div class="p-5" style="font-size: 15px; font-weight:bold;">Total : <span id="param1cat0">1</span> </div>
+					<div class="p-5" style="font-size: 15px; font-weight:bold;">Total : <span id="param1cat0">0</span> </div>
 					<div class="stats-progress progress">
 						<div class="progress-bar" style="width: 100%;"></div>
 					</div>
@@ -30,5 +32,9 @@
 
 @push('scripts')
 {{-- <script src="/assets/js/kap/dashboard.js?n=3"></script> --}}
-
+<script>
+	$.getJSON('countmodule',function(item){
+		$('#param1cat0').text(item)
+	})
+</script>
 @endpush
