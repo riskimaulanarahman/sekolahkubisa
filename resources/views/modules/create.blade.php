@@ -32,7 +32,7 @@
                 </div>
             @endif
         
-            <form method="POST" action="{{ route('modules.store') }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('materi.store') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="col-md-3">
                     <div class="mb-3">

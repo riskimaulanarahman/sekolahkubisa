@@ -35,7 +35,7 @@ Route::get('/', 'HomeController@index')->name('dashboard');
     // //API
 
     Route::apiResource('/api/master-user', 'masteruser\LoginUserController');
-    Route::resource('modules', 'ModuleController');
+    Route::resource('materi', 'ModuleController');
     Route::resource('/api/jawaban', 'JawabanController');
     // Route::apiResource('/api/sqacdoc','vendors\SqacdocController');
     // // Route::apiResource('/api/monitoring','kap\MonitoringController');
@@ -47,6 +47,14 @@ Route::get('/', 'HomeController@index')->name('dashboard');
     Route::get('checknilai/{id}', 'SoalController@checknilai');
     Route::get('countmodule', 'ModuleController@countmodule');
     Route::get('shownilai/{id}', 'SoalController@shownilai');
+
+    Route::get('biodata',function(){
+        return view('biodata');
+    })->name('biodata.index');
+
+    Route::get('videopuisi',function(){
+        return view('videopuisi');
+    })->name('videopuisi.index');
     // //import excel
     // Route::get('/siswa', 'SiswaController@index');
     // Route::get('/siswa/export_excel', 'SiswaController@export_excel');

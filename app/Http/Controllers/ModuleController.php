@@ -51,7 +51,7 @@ class ModuleController extends Controller
         $module->pathfile = $filename;
         $module->save();
 
-        return redirect()->route('modules.index')->with('success', 'Module created successfully.');
+        return redirect()->route('materi.index')->with('success', 'Materi created successfully.');
     }
 
     /**
@@ -104,7 +104,7 @@ class ModuleController extends Controller
 
         $module->save();
 
-        return redirect()->route('modules.index')->with('success', 'Module updated successfully.');
+        return redirect()->route('materi.index')->with('success', 'Materi updated successfully.');
     }
 
     /**
@@ -118,7 +118,7 @@ class ModuleController extends Controller
         $module = Module::findOrFail($id);
         $module->delete();
 
-        return redirect()->route('modules.index')->with('success', 'Module deleted successfully.');
+        return redirect()->route('materi.index')->with('success', 'Materi deleted successfully.');
     }
 
     public function countmodule()

@@ -1,6 +1,6 @@
 @extends('layouts.default', ['sidebarSearch' => true])
 
-@section('title', 'Module')
+@section('title', 'Materi')
 
 @push('css')
     <style>
@@ -42,7 +42,7 @@
     <div class="panel panel-info">
         <!-- begin panel-heading -->
         <div class="panel-heading">
-            <h4 class="panel-title">List Module </h4>
+            <h4 class="panel-title">List Materi </h4>
             <div class="panel-heading-btn">
                 <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
             
@@ -60,15 +60,15 @@
         @endif
         
         @if(Auth::user()->role == 'admin')
-            <a href="{{ route('modules.create') }}" class="btn btn-primary mb-3">Tambah Module Baru</a>
+            <a href="{{ route('materi.create') }}" class="btn btn-primary mb-3">Tambah Materi Baru</a>
         @endif
         <table class="table table-hover">
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama Module</th>
+                    <th>Nama Materi</th>
                     <th>File</th>
-                    <th>Tanggal</th>
+                    {{-- <th>Tanggal</th> --}}
                     <th>Actions</th>
                     {{-- <th>Hasil</th> --}}
                 </tr>
@@ -80,11 +80,11 @@
                         <td>{{ $no++ }}</td>
                         <td>{{ $module->nama_module }}</td>
                         <td><a href="upload/{{$module->pathfile}}" target="_blank"><button class="btn btn-info btn-xs"><i class="fa fa-eye"></i> Lihat</button></a></td>
-                        <td>{{ $module->created_at }}</td>
+                        {{-- <td>{{ $module->created_at }}</td> --}}
                         @if(Auth::user()->role == 'admin')
                             <td>
-                                <a href="{{ route('modules.edit', $module->id) }}" class="btn btn-primary">Ubah</a>
-                                <form action="{{ route('modules.destroy', $module->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this module?')">
+                                <a href="{{ route('materi.edit', $module->id) }}" class="btn btn-primary">Ubah</a>
+                                <form action="{{ route('materi.destroy', $module->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this module?')">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger">Hapus</button>

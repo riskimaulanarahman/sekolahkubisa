@@ -11,9 +11,9 @@ return [
         ],
         [
             'icon' => 'fa fa-book',
-            'title' => 'Module',
-            'url' => '/modules',
-            'route-name' => 'modules.index'
+            'title' => 'Materi',
+            'url' => '/materi',
+            'route-name' => 'materi.index'
         ],
         [
             'icon' => 'fa fa-book',

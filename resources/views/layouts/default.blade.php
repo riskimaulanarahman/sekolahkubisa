@@ -25,7 +25,7 @@
 	$contentClass = (!empty($contentFullWidth) || !empty($contentFullHeight)) ? 'content-full-width ' : '';
 	$contentClass .= (!empty($contentInverseMode)) ? 'content-inverse-mode ' : '';
 @endphp
-<body class="{{ $bodyClass }}" style="background-image: url('/assets/img/cover/motif1new.png');background-repeat: repeat;">
+<body class="{{ $bodyClass }}" style="background-image: url('/assets/img/cover/2.png');background-repeat:no-repeat; background-size:cover;">
 	@include('includes.component.page-loader')
 	
 	<div id="page-container" class="page-container fade page-sidebar-fixed page-header-fixed {{ $pageContainerClass }}">
